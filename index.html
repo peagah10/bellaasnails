@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Nails | Design de Unhas Profissional - Santana do Ipanema</title>
+    <!-- SEO Básico -->
+    <meta name="description" content="Transforme suas unhas com o melhor do design profissional. Bella Nails - Especialista em alongamento, nail art e esmaltação em gel em Santana e Região.">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bella Nails | Design de Unhas Profissional">
+    <meta property="og:description" content="Agende seu horário e descubra o design de unhas perfeito para você! 💅✨">
+    <meta property="og:image" content="https://bellanails.netlify.app/images/logo.jpg"> <!-- Troque pela URL da sua imagem -->
+    <meta property="og:url" content="https://bellanails.netlify.app/"> <!-- Troque pelo seu link -->
+    <meta property="og:site_name" content="Bella Nails">
+
+    <!-- Instagram / X (antigo Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bella Nails | Design de Unhas Profissional">
+    <meta name="twitter:description" content="Alongamentos, Nail Art, Gel, Spa de Mãos e muito mais. Agende já na Bella Nails! ✨💅">
+    <meta name="twitter:image" content="https://bellanails.netlify.app/images/logo.jpg"> <!-- Troque pela sua imagem -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #f5a9c7;
+            --primary-dark: #e97dab;
+            --secondary: #f8d7e5;
+            --accent: #8b44a3;
+            --text: #333333;
+            --text-light: #777777;
+            --light: #ffffff;
+            --light-gray: #f8f8f8;
+            --dark: #222222;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--light);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: var(--light);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mb-5 { margin-bottom: 3rem; }
+
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+        .mt-4 { margin-top: 2rem; }
+        .mt-5 { margin-top: 3rem; }
+
+        .py-1 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-2 { padding-top: 1rem; padding-bottom: 1rem; }
+        .py-3 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+        .py-4 { padding-top: 2rem; padding-bottom: 2rem; }
+        .py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+
+        .px-1 { padding-left: 0.5rem; padding-right: 0.5rem; }
+        .px-2 { padding-left: 1rem; padding-right: 1rem; }
+        .px-3 { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            position: relative;
+            margin-bottom: 3rem;
+            color: var(--accent);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .logo-text {
+            margin-left: 10px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+            font-weight: 500;
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 8px 20px;
+            border-radius: var(--border-radius);
+        }
+
+        .nav-cta:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: linear-gradient(135deg, var(--secondary) 0%, rgba(255, 255, 255, 0.8) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="10" cy="10" r="2" fill="%23f5a9c7" opacity="0.3"/></svg>');
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .promo-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: var(--accent);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            box-shadow: var(--box-shadow);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: var(--light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            border-radius: 0;
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .service-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .service-price {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .service-desc {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background-color: var(--light-gray);
+        }
+
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            background-color: var(--light);
+            border: 1px solid #e0e0e0;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary);
+            color: var(--light);
+            border-color: var(--primary);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            position: relative;
+            background-color: var(--light);
+            box-shadow: var(--box-shadow);
+        }
+
+        .portfolio-img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.05);
+        }
+
+        .heart-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            color: #ccc;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .heart-btn:hover,
+        .heart-btn.active {
+            color: var(--primary);
+        }
+
+        .portfolio-caption {
+            padding: 15px;
+            background: white;
+        }
+
+        .portfolio-title {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .portfolio-category {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Appointment Section */
+        .appointment {
+            background-color: var(--light);
+        }
+
+        .booking-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .booking-text {
+            max-width: 500px;
+        }
+
+        .booking-form {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-label.required::after {
+            content: '*';
+            color: #e74c3c;
+            margin-left: 4px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--light-gray);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            opacity: 0.5;
+            top: -100px;
+            left: -100px;
+        }
+
+        .testimonials::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            opacity: 0.5;
+            bottom: -100px;
+            right: -100px;
+        }
+
+        .testimonial-slider {
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            padding: 20px 0;
+            margin: 0 -15px;
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .testimonial-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .testimonial-card {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+            width: 350px;
+            background-color: var(--light);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            margin: 15px;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: var(--secondary);
+            opacity: 0.5;
+        }
+
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+            color: var(--text);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .testimonial-info h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .testimonial-info p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .slider-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--light);
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .slider-btn:hover {
+            background-color: var(--primary);
+            color: var(--light);
+            border-color: var(--primary);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--light);
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+
+        .certificates {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .certificate {
+            background-color: var(--light-gray);
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .certificate i {
+            margin-right: 8px;
+            color: var(--accent);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--light-gray);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .map-container {
+            height: 100%;
+            min-height: 350px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .contact-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .contact-text h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+        }
+
+        .contact-text p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        /* Loyalty Program */
+        .loyalty {
+            background-color: var(--light);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loyalty::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            opacity: 0.2;
+            top: -150px;
+            right: -150px;
+        }
+
+        .loyalty-container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .loyalty-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .loyalty-content p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .loyalty-card {
+            background: linear-gradient(135deg, var(--accent) 0%, #a05cb5 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loyalty-card::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .loyalty-card::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .loyalty-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .loyalty-card-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .loyalty-card-level {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .loyalty-card-stamps {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 30px 0;
+        }
+
+        .stamp {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 2px dashed rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .stamp.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+        }
+
+        .loyalty-card-footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--light);
+        }
+
+        .footer-text {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--light);
+            position: relative;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-link {
+            margin-bottom: 10px;
+        }
+
+        .footer-link a {
+            color: #aaa;
+            transition: var(--transition);
+        }
+
+        .footer-link a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.show {
+            display: block;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: var(--light);
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            max-width: 500px;
+            transform: translateY(-50px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--primary);
+        }
+
+        .modal-title {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Melhorias modernas - adicionando efeitos de hover e transições */
+        .service-card, .portfolio-item, .testimonial-card, .contact-info, .booking-form {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover, .portfolio-item:hover, .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .nav-link, .btn, .footer-link a {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+
+        .required-field-text {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        /* Animações adicionais */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .service-card, .portfolio-item, .testimonial-card {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .service-card:nth-child(2) { animation-delay: 0.1s; }
+        .service-card:nth-child(3) { animation-delay: 0.2s; }
+        .service-card:nth-child(4) { animation-delay: 0.3s; }
+
+        /* Formulário do programa de fidelidade */
+        .loyalty-form-group {
+            margin-bottom: 15px;
+        }
+
+        .loyalty-form-control {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            color: white;
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+
+        .loyalty-form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .loyalty-form-control:focus {
+            outline: none;
+            border-color: white;
+        }
+
+        /* Loader para feedback visual */
+        .loader {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 0.8s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Indicador de resposta do programa de fidelidade */
+        .loyalty-response {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: var(--border-radius);
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Todos horários disponíveis sempre */
+        .time-status {
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: block;
+            color: #25D366; /* Verde do WhatsApp para indicar disponibilidade */
+            font-weight: 500;
+        }
+
+        /* WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .booking-container,
+            .loyalty-container,
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .booking-text,
+            .about-content,
+            .loyalty-content {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .promo-badge {
+                width: 80px;
+                height: 80px;
+                font-size: 0.9rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--light);
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 0;
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 15px 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .portfolio-grid,
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .map-container {
+                min-height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .portfolio-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-card {
+                width: 280px;
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botão de WhatsApp Flutuante -->
+    <a href="https://wa.me/5582999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo aprimorada da empresa -->
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmNWE5YzciIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzhiNDRhMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iOTAiIGZpbGw9IiNmZmZmZmYiIC8+CiAgPHBhdGggZD0iTTEwMCwzMCBDNjAsMzAgMzAsNjAgMzAsMTAwIEMzMCwxNDAgNjAsMTcwIDEwMCwxNzAgQzE0MCwxNzAgMTcwLDE0MCAxNzAsMTAwIEMxNzAsNjAgMTQwLDMwIDEwMCwzMCB6IE0xMDAsMTUwIEM3MS4wLDE1MCA1MCwxMjguOTggNTAsMTAwIEM1MCw3MS4wIDcxLjAsNTAgMTAwLDUwIEMxMjguOTgsNTAgMTUwLDcxLjAgMTUwLDEwMCBDMTUwLDEyOC45OCAxMjguOTgsMTUwIDEwMCwxNTAgeiIgZmlsbD0idXJsKCNncmFkKSIgLz4KICA8cGF0aCBkPSJNOTAsODAgQzgwLDgwIDcwLDgwIDcwLDkwIEw3MCwxMzAgQzcwLDE0MCA5MCwxNDAgOTAsMTMwIEw5MCwxMTAgTDExMCwxMTAgTDExMCwxMzAgQzExMCwxNDAgMTMwLDE0MCAxMzAsMTMwIEwxMzAsOTAgQzEzMCw4MCAxMjAsODAgMTEwLDgwIHoiIGZpbGw9InVybCgjZ3JhZCkiIC8+CiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iNzAiIHI9IjE1IiBmaWxsPSJ1cmwoI2dyYWQpIiAvPgo8L3N2Zz4=" alt="Bella Nails Logo">
+                <span class="logo-text">Bella Nails</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#appointment" class="nav-link nav-cta">Agendar</a></li>
+                </ul>
+                <button class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Transforme suas Unhas em Obras de Arte</h1>
+                    <p class="hero-subtitle">Design de unhas exclusivo, personalizado e com produtos premium para realçar a sua beleza natural.</p>
+                    <div>
+                        <a href="#appointment" class="btn">Agendar</a>
+                        <a href="#portfolio" class="btn btn-secondary ml-2">Ver Portfólio</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Imagem principal atualizada -->
+                    <img src="images/capa.jpg" alt="Nail Design Profissional">
+                    <div class="promo-badge">
+                        <span>-20%</span>
+                        <small>Primeira Visita</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title text-center">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/alonga.jpg" alt="Alongamento de Unhas">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Alongamento de Unhas</h3>
+                        <span class="service-price">A partir de R$ 120,00</span>
+                        <p class="service-desc">Alongamentos em gel, acrílico ou fibra de vidro com durabilidade superior e acabamento perfeito.</p>
+                        <a href="#appointment" class="btn">Agendar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/esmalta.jpg" alt="Esmaltação em Gel">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Esmaltação em Gel</h3>
+                        <span class="service-price">A partir de R$ 80,00</span>
+                        <p class="service-desc">Esmaltação durável com acabamento brilhante que dura até 3 semanas sem descascar.</p>
+                        <a href="#appointment" class="btn">Agendar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/Art.jpg" alt="Nail Art Personalizada">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Nail Art Personalizada</h3>
+                        <span class="service-price">A partir de R$ 30,00</span>
+                        <p class="service-desc">Designs exclusivos e personalizados com pedrarias, adesivos, pinturas à mão e muito mais.</p>
+                        <a href="#appointment" class="btn">Agendar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/manut.jpg" alt="Manutenção de Unhas">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Manutenção de Unhas</h3>
+                        <span class="service-price">A partir de R$ 90,00</span>
+                        <p class="service-desc">Cuidados periódicos para manter suas unhas sempre perfeitas e saudáveis.</p>
+                        <a href="#appointment" class="btn">Agendar</a>
+                    </div>
+                </div>
+                <!-- Novos serviços adicionados -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/spa.jpg" alt="Spa de Mãos e Pés">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Spa de Mãos e Pés</h3>
+                        <span class="service-price">A partir de R$ 75,00</span>
+                        <p class="service-desc">Tratamento completo com esfoliação, hidratação profunda, massagem relaxante e parafina para rejuvenescer suas mãos e pés.</p>
+                        <a href="#appointment" class="btn">Agendar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/3D.jpg" alt="Decoração com Adesivos e Pedrarias">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Decoração Especial 3D</h3>
+                        <span class="service-price">A partir de R$ 50,00</span>
+                        <p class="service-desc">Decorações elaboradas com efeitos tridimensionais, pedrarias de cristal, strass premium e detalhes exclusivos.</p>
+                        <a href="#appointment" class="btn">Agendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title text-center">Portfólio</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="alongamento">Alongamento</button>
+                <button class="filter-btn" data-filter="gel">Esmaltação em Gel</button>
+                <button class="filter-btn" data-filter="nail-art">Nail Art</button>
+                <button class="filter-btn" data-filter="fibra">Fibra de Vidro</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="alongamento">
+                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    <img src="images/stilettorosa.jpg" class="portfolio-img" alt="Alongamento de Unhas">
+                    <div class="portfolio-caption">
+                        <h4 class="portfolio-title">Alongamento Stiletto Rosa</h4>
+                        <p class="portfolio-category">Alongamento</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="gel">
+                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    <img src="images/esmalt.jpg" class="portfolio-img" alt="Esmaltação em Gel">
+                    <div class="portfolio-caption">
+                        <h4 class="portfolio-title">Esmaltação em Gel Brilhante</h4>
+                        <p class="portfolio-category">Esmaltação em Gel</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nail-art">
+                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    <img src="images/pedrarias.jpg" class="portfolio-img" alt="Nail Art Designs">
+                    <div class="portfolio-caption">
+                        <h4 class="portfolio-title">Nail Art Pedrarias</h4>
+                        <p class="portfolio-category">Nail Art</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="fibra">
+                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    <img src="images/fibra.png" class="portfolio-img" alt="Fibra de Vidro">
+                    <div class="portfolio-caption">
+                        <h4 class="portfolio-title">Alongamento em Fibra de Vidro</h4>
+                        <p class="portfolio-category">Fibra de Vidro</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="alongamento">
+                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    <img src="images/roxo.jpg" class="portfolio-img" alt="Alongamento de Unhas">
+                    <div class="portfolio-caption">
+                        <h4 class="portfolio-title">Alongamento Almond Roxo</h4>
+                        <p class="portfolio-category">Alongamento</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nail-art">
+                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    <img src="images/Art.jpg" class="portfolio-img" alt="Nail Art Designs">
+                    <div class="portfolio-caption">
+                        <h4 class="portfolio-title">Nail Art Geométrica</h4>
+                        <p class="portfolio-category">Nail Art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <h2 class="section-title text-center">Agende seu Horário</h2>
+            <div class="booking-container">
+                <div class="booking-text">
+                    <h3 class="mb-3">Por que agendar online?</h3>
+                    <p class="mb-3">Marcar seu horário é simples, rápido e você tem a garantia de atendimento personalizado na data e hora de sua preferência.</p>
+                    <h4 class="mb-2">Como funciona:</h4>
+                    <ul>
+                        <li class="mb-2">Escolha o serviço desejado</li>
+                        <li class="mb-2">Selecione a data disponível</li>
+                        <li class="mb-2">Escolha qualquer horário que preferir</li>
+                        <li class="mb-2">Preencha seus dados para confirmar</li>
+                        <li class="mb-2">Envie seu agendamento por WhatsApp</li>
+                    </ul>
+                    <div class="mt-4">
+                        <h4 class="mb-2">Política de cancelamento:</h4>
+                        <p>Cancelamentos devem ser feitos com pelo menos 24h de antecedência para evitar cobrança de taxa.</p>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <form id="appointment-form">
+                        <span class="required-field-text">* Campos obrigatórios</span>
+                        <div class="form-group">
+                            <label for="service" class="form-label required">Serviço Desejado</label>
+                            <select id="service" class="form-control">
+                                <option value="">Selecione um serviço</option>
+                                <option value="alongamento">Alongamento de Unhas</option>
+                                <option value="gel">Esmaltação em Gel</option>
+                                <option value="nail-art">Nail Art Personalizada</option>
+                                <option value="manutencao">Manutenção</option>
+                                <option value="fibra">Fibra de Vidro</option>
+                                <option value="spa">Spa de Mãos e Pés</option>
+                                <option value="decoracao3d">Decoração Especial 3D</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date" class="form-label required">Data</label>
+                            <input type="date" id="date" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time" class="form-label required">Horário</label>
+                            <select id="time" class="form-control">
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="form-label required">Nome Completo</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label required">Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="notes" class="form-label">Observações (opcional)</label>
+                            <textarea id="notes" rows="3" class="form-control"></textarea>
+                        </div>
+                        <button type="button" id="whatsapp-btn" class="btn btn-block whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Confirmar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Depoimentos</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Simplesmente amei o resultado! As unhas ficaram perfeitas e duraram muito mais do que nas outras manicures que já fiz. Recomendo demais!</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=976&q=80" alt="Cliente">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Ana Paula</h4>
+                                <p>Cliente desde 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Profissionalismo de primeira! Adoro a atenção aos detalhes e como sempre sou bem recebida. As unhas de fibra de vidro que fiz são maravilhosas!</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=961&q=80" alt="Cliente">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Mariana Silva</h4>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Excelente atendimento! Já fiz vários designs diferentes e todos ficaram perfeitos. O sistema de agendamento online é super prático.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Cliente">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Juliana Costa</h4>
+                                <p>Cliente desde 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">A Isabella é uma profissional incrível! Suas técnicas são impecáveis e o atendimento é tão bom quanto. Minhas unhas nunca ficaram tão bonitas e fortes.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=989&q=80" alt="Cliente">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Carolina Mendes</h4>
+                                <p>Cliente desde 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Adoro as nail arts que a Isabella faz! São verdadeiras obras de arte e sempre recebo muitos elogios. O salão é super aconchegante e higiênico.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80" alt="Cliente">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Fernanda Lima</h4>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Os alongamentos em fibra que a Bella Nails faz são os melhores que já experimentei. Não danificam minhas unhas naturais e parecem super naturais.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Cliente">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Patrícia Oliveira</h4>
+                                <p>Cliente desde 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Program -->
+    <section class="loyalty">
+        <div class="container">
+            <div class="loyalty-container">
+                <div class="loyalty-content">
+                    <h2 class="section-title">Programa de Fidelidade</h2>
+                    <p>Queremos recompensar você por escolher nossos serviços! Com o programa de fidelidade, você acumula carimbos a cada visita e ganha benefícios exclusivos.</p>
+                    <h3 class="mb-2">Como funciona:</h3>
+                    <p>A cada serviço realizado, você ganha 1 carimbo em seu cartão virtual.</p>
+                    <p>Ao completar 5 carimbos, você ganha um serviço de Esmaltação em Gel gratuito!</p>
+                    <p>Clientes fidelidade também têm acesso a promoções exclusivas e prioridade nos agendamentos.</p>
+                    <button id="loyalty-btn" class="btn mt-3">Participar do Programa</button>
+                </div>
+                <div class="loyalty-card">
+                    <div class="loyalty-card-header">
+                        <div class="loyalty-card-logo">Bella Nails</div>
+                        <div class="loyalty-card-level">Cliente Fiel</div>
+                    </div>
+                    <p>Complete 5 serviços e ganhe 1 Esmaltação em Gel!</p>
+                    <div class="loyalty-card-stamps">
+                        <div class="stamp active"><i class="fas fa-check"></i></div>
+                        <div class="stamp active"><i class="fas fa-check"></i></div>
+                        <div class="stamp active"><i class="fas fa-check"></i></div>
+                        <div class="stamp"></div>
+                        <div class="stamp"></div>
+                    </div>
+                    <div class="loyalty-card-footer">
+                        <p>3/5 serviços completados</p>
+                    </div>
+                    
+                    <!-- Formulário integrado ao cartão de fidelidade -->
+                    <div id="loyalty-form" style="display: none; margin-top: 20px;">
+                        <div class="loyalty-form-group">
+                            <input type="text" class="loyalty-form-control" id="loyalty-name" placeholder="Nome completo">
+                        </div>
+                        <div class="loyalty-form-group">
+                            <input type="tel" class="loyalty-form-control" id="loyalty-phone" placeholder="Telefone / WhatsApp">
+                        </div>
+                        <div class="loyalty-form-group">
+                            <input type="email" class="loyalty-form-control" id="loyalty-email" placeholder="E-mail">
+                        </div>
+                        <button type="button" id="loyalty-submit" class="btn btn-block" style="background-color: white; color: var(--accent);">
+                            Cadastrar <span id="loyalty-loader" class="loader"></span>
+                        </button>
+                        <div id="loyalty-response" class="loyalty-response"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/sobre.jpg" alt="Nail Artist">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p>Olá! Sou Isabella, nail designer especializada há mais de 8 anos. Minha paixão por unhas começou quando ainda era adolescente, e desde então tenho me dedicado a aperfeiçoar minhas técnicas e aprender as tendências mais recentes do mercado.</p>
+                    <p>Meu objetivo é proporcionar mais que um serviço de beleza, mas uma experiência completa de cuidado e transformação que faça você se sentir ainda mais confiante e radiante.</p>
+                    <p>Trabalho com produtos de altíssima qualidade, hipoalergênicos e que garantem durabilidade sem comprometer a saúde das suas unhas naturais.</p>
+                    <h3 class="mb-2 mt-4">Certificações e Especializações</h3>
+                    <div class="certificates">
+                        <span class="certificate"><i class="fas fa-certificate"></i> Alongamento em Gel</span>
+                        <span class="certificate"><i class="fas fa-certificate"></i> Fibra de Vidro</span>
+                        <span class="certificate"><i class="fas fa-certificate"></i> Nail Art Avançada</span>
+                        <span class="certificate"><i class="fas fa-certificate"></i> Técnicas Russas</span>
+                        <span class="certificate"><i class="fas fa-certificate"></i> Biossegurança</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Endereço</h4>
+                            <p>Rua Padre Cornélio, 123 - Centro</p>
+                            <p>Santana do Ipanema, AL - CEP 57500-000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefone</h4>
+                            <p>(75) 99134-2279</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/5575991342279">Clique para conversar</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>E-mail</h4>
+                            <p>contato@bellanails.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 9h às 19h</p>
+                            <p>Sábados: 9h às 18h</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nails.designer/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mapa adicionado -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31526.17889453506!2d-37.26859241759761!3d-9.377879845571723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70438148c04962d%3A0xbe335c3e9cc80739!2sSantana%20do%20Ipanema%2C%20AL%2C%2057500-000!5e0!3m2!1sen!2sbr!4v1653323696546!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmNWE5YzciIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzhiNDRhMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iOTAiIGZpbGw9IiNmZmZmZmYiIC8+CiAgPHBhdGggZD0iTTEwMCwzMCBDNjAsMzAgMzAsNjAgMzAsMTAwIEMzMCwxNDAgNjAsMTcwIDEwMCwxNzAgQzE0MCwxNzAgMTcwLDE0MCAxNzAsMTAwIEMxNzAsNjAgMTQwLDMwIDEwMCwzMCB6IE0xMDAsMTUwIEM3MS4wLDE1MCA1MCwxMjguOTggNTAsMTAwIEM1MCw3MS4wIDcxLjAsNTAgMTAwLDUwIEMxMjguOTgsNTAgMTUwLDcxLjAgMTUwLDEwMCBDMTUwLDEyOC45OCAxMjguOTgsMTUwIDEwMCwxNTAgeiIgZmlsbD0idXJsKCNncmFkKSIgLz4KICA8cGF0aCBkPSJNOTAsODAgQzgwLDgwIDcwLDgwIDcwLDkwIEw3MCwxMzAgQzcwLDE0MCA5MCwxNDAgOTAsMTMwIEw5MCwxMTAgTDExMCwxMTAgTDExMCwxMzAgQzExMCwxNDAgMTMwLDE0MCAxMzAsMTMwIEwxMzAsOTAgQzEzMCw4MCAxMjAsODAgMTEwLDgwIHoiIGZpbGw9InVybCgjZ3JhZCkiIC8+CiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iNzAiIHI9IjE1IiBmaWxsPSJ1cmwoI2dyYWQpIiAvPgo8L3N2Zz4=" alt="Bella Nails Logo">
+                        <span class="footer-logo-text">Bella Nails</span>
+                    </div>
+                    <p class="footer-text">Transformando unhas em obras de arte desde 2016. Nosso compromisso é com a sua beleza e satisfação.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#home">Home</a></li>
+                        <li class="footer-link"><a href="#services">Serviços</a></li>
+                        <li class="footer-link"><a href="#portfolio">Portfólio</a></li>
+                        <li class="footer-link"><a href="#appointment">Agendamento</a></li>
+                        <li class="footer-link"><a href="#about">Sobre</a></li>
+                        <li class="footer-link"><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Serviços</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#services">Alongamento de Unhas</a></li>
+                        <li class="footer-link"><a href="#services">Esmaltação em Gel</a></li>
+                        <li class="footer-link"><a href="#services">Nail Art Personalizada</a></li>
+                        <li class="footer-link"><a href="#services">Manutenção</a></li>
+                        <li class="footer-link"><a href="#services">Spa de Mãos e Pés</a></li>
+                        <li class="footer-link"><a href="#services">Decoração Especial 3D</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contate-nos</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="tel:+5575991342279"><i class="fas fa-phone-alt"></i> (75) 99134-2279</a></li>
+                        <li class="footer-link"><a href="mailto:contato@bellanails.com.br"><i class="fas fa-envelope"></i> contato@bellanails.com.br</a></li>
+                        <li class="footer-link"><a href="#contact"><i class="fas fa-map-marker-alt"></i> Santana do Ipanema, AL</a></li>
+                        <li class="footer-link"><a href="https://wa.me/5575991342279"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li class="footer-link"><a href="https://www.instagram.com/nails.designer/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Bella Nails. Todos os direitos reservados.</p>
+                    <p class="developer-credit">
+                        <i class="fas fa-code"></i> Desenvolvido por 
+                        <a href="https://wa.me/5575991342279" target="_blank" class="developer-link">
+                            PeagahTech
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Agendamento Confirmado!</h3>
+            <p>Seu horário foi reservado com sucesso.</p>
+            <div class="booking-details mt-3">
+                <p><strong>Serviço:</strong> <span id="confirm-service"></span></p>
+                <p><strong>Data:</strong> <span id="confirm-date"></span></p>
+                <p><strong>Horário:</strong> <span id="confirm-time"></span></p>
+                <p><strong>Nome:</strong> <span id="confirm-name"></span></p>
+            </div>
+            <p class="mt-3">Clique no botão abaixo para confirmar seu agendamento pelo WhatsApp.</p>
+            <a id="whatsapp-confirm-btn" href="#" class="btn btn-block whatsapp-btn mt-3">
+                <i class="fab fa-whatsapp"></i> Confirmar via WhatsApp
+            </a>
+        </div>
+    </div>
+    
+    <!-- Modal do Programa de Fidelidade -->
+    <div id="loyalty-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Programa de Fidelidade</h3>
+            <p>Parabéns! Seu cadastro foi realizado com sucesso no nosso programa de fidelidade.</p>
+            <p class="mt-3">Benefícios:</p>
+            <ul class="mt-2">
+                <li>Acumule 1 ponto a cada serviço realizado</li>
+                <li>Complete 5 pontos e ganhe uma Esmaltação em Gel gratuita</li>
+                <li>Acesso a promoções exclusivas para membros</li>
+                <li>Prioridade no agendamento</li>
+                <li>Notificações sobre novidades e eventos</li>
+            </ul>
+            <div class="mt-4">
+                <p>Seu cartão de fidelidade está disponível no nosso aplicativo ou diretamente no salão.</p>
+            </div>
+            <button class="btn btn-block mt-3">Entendi</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileToggle.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                navMenu.classList.remove('active');
+                mobileToggle.querySelector('i').classList.add('fa-bars');
+                mobileToggle.querySelector('i').classList.remove('fa-times');
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerHeight = document.querySelector('header').offsetHeight;
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active Navigation Link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - document.querySelector('header').offsetHeight;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Portfolio Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorites (Heart) Toggle
+        const heartButtons = document.querySelectorAll('.heart-btn');
+
+        heartButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                button.classList.toggle('active');
+                const icon = button.querySelector('i');
+                icon.classList.toggle('far');
+                icon.classList.toggle('fas');
+            });
+        });
+
+        // Testimonial Slider
+        const testimonialContainer = document.querySelector('.testimonial-container');
+        const prevBtn = document.querySelector('.slider-prev');
+        const nextBtn = document.querySelector('.slider-next');
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        const cardWidth = testimonialCards[0].offsetWidth + 30; // Including margin
+
+        prevBtn.addEventListener('click', () => {
+            testimonialContainer.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            testimonialContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+
+        // WhatsApp Button Functionality
+        document.getElementById('whatsapp-btn').addEventListener('click', function() {
+            // Get form values
+            const service = document.getElementById('service').value;
+            const serviceText = service ? document.getElementById('service').options[document.getElementById('service').selectedIndex].text : '';
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const notes = document.getElementById('notes').value;
+            
+            // Validate form
+            if (service && date && time && name && phone) {
+                // Format date for display
+                const formattedDate = new Date(date).toLocaleDateString('pt-BR');
+                
+                // Create WhatsApp message
+                let message = `*Agendamento Bella Nails*\n\n`;
+                message += `*Nome:* ${name}\n`;
+                message += `*Serviço:* ${serviceText}\n`;
+                message += `*Data:* ${formattedDate}\n`;
+                message += `*Horário:* ${time}\n`;
+                message += `*Telefone:* ${phone}\n`;
+                
+                if (email) {
+                    message += `*Email:* ${email}\n`;
+                }
+                
+                if (notes) {
+                    message += `*Observações:* ${notes}\n`;
+                }
+                
+                // Encode message for URL
+                const encodedMessage = encodeURIComponent(message);
+                
+                // WhatsApp number - Atualizamos para o número de Alagoas (82)
+                const whatsappNumber = "5575991342279";
+                
+                // Create WhatsApp link and open in new tab
+                const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+                window.open(whatsappLink, '_blank');
+                
+                // Limpa o formulário
+                document.getElementById('appointment-form').reset();
+            } else {
+                // Show validation errors
+                if (!service) document.getElementById('service').style.borderColor = '#e74c3c';
+                if (!date) document.getElementById('date').style.borderColor = '#e74c3c';
+                if (!time) document.getElementById('time').style.borderColor = '#e74c3c';
+                if (!name) document.getElementById('name').style.borderColor = '#e74c3c';
+                if (!phone) document.getElementById('phone').style.borderColor = '#e74c3c';
+                
+                alert('Por favor, preencha todos os campos obrigatórios antes de confirmar.');
+                
+                // Reset border colors after 3 seconds
+                setTimeout(() => {
+                    document.querySelectorAll('.form-control').forEach(input => {
+                        input.style.borderColor = '#ddd';
+                    });
+                }, 3000);
+            }
+        });
+
+        // Programa de Fidelidade Functionality
+        const loyaltyBtn = document.getElementById('loyalty-btn');
+        const loyaltyForm = document.getElementById('loyalty-form');
+        const loyaltySubmit = document.getElementById('loyalty-submit');
+        const loyaltyLoader = document.getElementById('loyalty-loader');
+        const loyaltyResponse = document.getElementById('loyalty-response');
+        const loyaltyModal = document.getElementById('loyalty-modal');
+        const closeButtons = document.querySelectorAll('.close-modal');
+        const modals = document.querySelectorAll('.modal');
+
+        // Show loyalty form when button is clicked
+        loyaltyBtn.addEventListener('click', () => {
+            if (loyaltyForm.style.display === 'none' || !loyaltyForm.style.display) {
+                loyaltyForm.style.display = 'block';
+                loyaltyBtn.textContent = 'Fechar Formulário';
+                // Scroll to form
+                loyaltyForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                loyaltyForm.style.display = 'none';
+                loyaltyBtn.textContent = 'Participar do Programa';
+            }
+        });
+
+        // Submit loyalty form
+        loyaltySubmit.addEventListener('click', function() {
+            const name = document.getElementById('loyalty-name').value;
+            const phone = document.getElementById('loyalty-phone').value;
+            const email = document.getElementById('loyalty-email').value;
+            
+            if (name && phone) {
+                // Show loader
+                loyaltyLoader.style.display = 'inline-block';
+                
+                // Simulate API call delay
+                setTimeout(() => {
+                    // Hide loader
+                    loyaltyLoader.style.display = 'none';
+                    
+                    // Show success message
+                    loyaltyResponse.style.display = 'block';
+                    loyaltyResponse.textContent = 'Cadastro realizado com sucesso!';
+                    
+                    // Show modal
+                    loyaltyModal.classList.add('show');
+                    
+                    // Reset form
+                    document.getElementById('loyalty-name').value = '';
+                    document.getElementById('loyalty-phone').value = '';
+                    document.getElementById('loyalty-email').value = '';
+                    
+                    // Hide form
+                    setTimeout(() => {
+                        loyaltyForm.style.display = 'none';
+                        loyaltyResponse.style.display = 'none';
+                        loyaltyBtn.textContent = 'Participar do Programa';
+                    }, 3000);
+                    
+                }, 1500);
+            } else {
+                // Show error message
+                loyaltyResponse.style.display = 'block';
+                loyaltyResponse.textContent = 'Por favor, preencha nome e telefone.';
+                loyaltyResponse.style.backgroundColor = 'rgba(231, 76, 60, 0.2)';
+                
+                // Reset error message
+                setTimeout(() => {
+                    loyaltyResponse.style.display = 'none';
+                }, 3000);
+            }
+        });
+
+        // Close modals
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modals.forEach(modal => {
+                    modal.classList.remove('show');
+                });
+            });
+        });
+
+        // Close modal when clicking outside
+        modals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                }
+            });
+        });
+
+        // Close loyalty modal when "Entendi" button is clicked
+        document.querySelector('#loyalty-modal .btn').addEventListener('click', () => {
+            loyaltyModal.classList.remove('show');
+        });
+
+        // Form field validation - remove error style on input
+        document.querySelectorAll('.form-control, .loyalty-form-control').forEach(input => {
+            input.addEventListener('input', function() {
+                this.style.borderColor = '';
+            });
+        });
+
+        // Detectar modo escuro do sistema
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html>
